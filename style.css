@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@1,300&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, #B06AB3, #4568DC);
+  color: white;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  font-family: "Jost",sans-serif;
+  margin: 0;
+  min-height: 100vh;
+}
+
+.pw-container{
+  background-color: indigo;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+min-width: 400px;
+}
+
+.pw-header{
+  padding: 1rem;
+}
+
+.pw{
+  background: linear-gradient(to right, #926bb3, #4568DC);
+  display: flex;
+  font-size: 1.5rem;
+  align-items:center;
+  height: 70px;
+  width: 100%;
+  position: relative;
+  padding: 1rem;
+}
+
+.pw button{
+  font-family: inherit;
+  font-weight: bold;
+  background-color: rgb(38, 2, 75);
+  border: none;
+  cursor:pointer;
+  color: #fff;
+  padding: 0.25rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(0, 50%);
+  transition: opacity 0.2s ease, transform 0.2s ease, background-color 0.2s ease;
+  opacity: 0;
+}
+
+.pw:hover button{
+  opacity: 1;
+  transform: translate(0, 100%);
+  
+}
+
+.pw button:hover{
+  background-color:#2e56dc ;
+}
+
+.pw-body{
+ padding: 0 1rem; 
+}
+
+.form-control{
+  margin: 0.75rem 0;
+}
+input{
+  justify-content: space-between;
+  color: #111;
+}
+
+.generate{
+  display: block;
+  border: none;
+  background-color:rgb(38, 2, 75);
+  color: #FFF;
+  font-family:inherit;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  width: 100%;
+  margin-top: 1rem;
+  transition: background-color 0.4s ease;
+  cursor: pointer;
+}
+
+.generate:hover{
+  background-color: #2e56dc;
+}
